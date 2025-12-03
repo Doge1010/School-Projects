@@ -29,7 +29,7 @@ class XOTournament:
 
         self.save_results_to_csv(self.csv_filename)
 
-        print("Tournament finished ✅")
+        print("Tournament finished")
 
     def run_single_game(self, game_number):
         game = XOGame()
@@ -145,4 +145,5 @@ class XOTournament:
         print(f"Average moves per game: {self.get_average_game_length():.2f}")
 
 tour = XOTournament()
+
 tour.run_tournament()
